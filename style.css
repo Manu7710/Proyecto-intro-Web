@@ -323,3 +323,8 @@ main{
     }
 
 }
+@media screen and (min-width: 400px){
+    .B-texto{
+        font-size: small;
+    }
+}
