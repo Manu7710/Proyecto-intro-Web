@@ -10,36 +10,67 @@ body{
 
 header{
     font-size: 1rem;
-    background-color: aqua;
+    background-color: white;
     display: flex;
     flex-wrap: wrap;
     height: 6rem;
+}
+
+.Pinterest {
+    border-radius: 50%;
+    background-color: white;
+    border-color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.Pinterest:hover .pinterest-button{
+    opacity: 0.3;
 }
 
 .pinterest-button{
     max-width: 40px;
 }
 
+.button-img{
+    border-radius: 50%;
+    background-color: white;
+    border-color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.button-img:hover {
+    background-color: lightgrey;
+}
+
 nav{
     font-size: 1rem;
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     size: 1rem;
-    background-color: cornflowerblue;
+    background-color: white;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    gap: 1rem;
+    gap: 0rem;
     justify-content: space-between;
     position:fixed;
     top: 0;
     width: 100%;
     z-index: 1;
-    height: 6rem;
+    height: 3rem;
     padding-top: 0%;
 }
 
 .B-texto{
     height: 40px;
+    border-radius: 30%;
+    font-size: larger;
+    background-color: white;
+    border-color: white;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
 }
 
 div#container {
@@ -73,7 +104,7 @@ div#container {
     margin: 0;
     padding: 0 0.7rem;
     
-    background-color: #f8f8f8;
+    background-color: lightgrey;
     
     border: 0;
     border-top-left-radius: 5px;
@@ -87,7 +118,7 @@ div#container {
     padding: 0 1rem;
   
     color: #fff;
-    background-color:cadetblue;
+    background-color:lightgrey;
     font-weight: bold;
     
     border-top-right-radius: 5px;
@@ -99,7 +130,9 @@ div#container {
   .search-button{
     max-width: 16px;
   }
-
+.search-bar:hover {
+    opacity: 0.5;;
+}
 .button-nav{
     max-width: 16px;
 }
@@ -109,15 +142,17 @@ main{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-color:lightpink;
+    background-color:white;
     z-index: 0;
 }
 .card{
    position: relative;
    width: 20rem;
+   cursor: zoom-in;
+   border-radius: 5%;
 }
 .card:hover{
-    background-color: blueviolet;
+    background-color: black;
 }
 
 .img{
@@ -127,6 +162,7 @@ main{
     height: auto;
     transition: .5s ease;
     backface-visibility: hidden;
+    border-radius: 5%;
 }
 
 .mid{
@@ -140,8 +176,28 @@ main{
     text-align: center;
 }
 
+.save-button{
+    background-color: red;
+    color: white;
+    font-size: large;
+    cursor: pointer;
+    border: none;
+    border-radius: 20%;
+}
+
+.save-button:hover {
+    opacity: 0.3;
+}
+
 .in-button{
     max-width: 16px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+.in-button:hover{
+    opacity: 0.3;
 }
 
 .card:hover .img{
@@ -153,7 +209,7 @@ main{
 }
 
 .inside{
-    background-color:cornflowerblue;
+    background-color:black;
     color: black;
     font-size: 1rem;
     
